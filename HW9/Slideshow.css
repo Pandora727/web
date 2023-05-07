@@ -1,0 +1,50 @@
+body{
+    background-image: url('https://media.istockphoto.com/id/1174854848/vector/aircraft-destinations-with-planes-icons-on-blue-background-abstract-seamless-pattern.jpg?s=612x612&w=0&k=20&c=hcj3Eu8HC2JWbliY5CZChDNpGrLNjvZylU-6JidI3IM=');
+    background-repeat: repeat;
+}
+
+div {
+    margin:auto;
+    width:90%;
+    text-align: center;
+    align-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:24px;
+    line-height: 250%;
+}
+
+img {
+   
+    box-shadow: 3px 3px 2px grey;
+    border-radius: 16px;
+}
+
+h2 {
+    font-size: 54px;
+    color: white;
+    text-shadow: 2px 2px 2px grey;
+}
+
+input {
+    /* background-color: aliceblue; */
+    width:160px;
+    height:40px;
+    margin:16px;
+    border: 2px ridge gray;
+    border-radius: 4px;
+    background-color: aliceblue;
+    align-self: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+input:hover {
+    scale:110%;
+    background-color:rgb(135, 194, 245);
+}
+
+input:active {
+    scale: 90%;
+}

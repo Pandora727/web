@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+        
+<head>
+    <title>Gabby </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="exam 2">
+    <meta name="author" content="Gabby Fan, Ziyue Fan">
+    <link rel="stylesheet" href="exam2.css">
+    
+    <script src="exam2.js" defer></script>
+
+</head> 
+        
+<body>
+    <h2>Tic-Tac-Toe</h2>
+    <div id="board">
+        <table>
+            <tr>
+                <td>
+                    <input class="buttons" type="button" id="1" onClick="play(event)  ">
+                </td>
+                <td>
+                    <input class="buttons" type="button" id="2" onClick="play(event)">
+                </td>
+                <td>
+                    <input class="buttons" type="button" id="3" onClick="play(event)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="buttons" type="button" id="4" onClick="play(event)">
+                </td>
+                <td>
+                    <input class="buttons" type="button" id="5" onClick="play(event)">
+                </td>
+                <td>
+                    <input class="buttons" type="button" id="6" onClick="play(event)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="buttons" type="button" id="7" onClick="play(event)">
+                </td>
+                <td>
+                    <input class="buttons" type="button" id="8" onClick="play(event)">
+                </td>
+                <td>
+                    <input class="buttons" type="button" id="9" onClick="play(event)">
+                </td>
+            </tr>
+        </table>
+        <input type="button" id="restart" value="Restart" onClick="restart()">
+    </div>
+
+    <div id="scoreboard">
+        <p> X:</p><p id="X"></p>
+        <p> O:</p><p id="O"></p>
+    </div>
+
+</body>
+</html>

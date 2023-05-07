@@ -1,0 +1,85 @@
+body {
+    background-image: url('https://cdn.wallpapersafari.com/1/84/JLn3vw.jpg');
+}
+
+h2 {
+    text-align: center;
+    color: #f8971f;
+    font-size:50px;
+    font-family:'GT Sectra', 'Georgia';
+    font-style: italic;
+}
+
+.info {
+    text-align: right;
+}
+
+.userinfo {
+    text-align: left;
+    padding: 4px;
+}
+
+tr, td, th {
+    text-align: center;
+    padding: 10px;
+    font-family:'Georgia';
+    font-size:20px;
+}
+
+table {
+    width: 960px;
+    height:540px;
+    margin:auto;
+    border: 5px ridge #f8971f;
+    background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+#feedbackform {
+    text-align: center;
+  
+}
+
+#department {
+    text-align: center;
+    font-family: 'Georgia';
+    font-size: 16px;
+}
+
+input {
+    margin:1px;
+    border: 1px ridge gray;
+    border-radius: 4px;
+    background-color: white;
+
+}
+
+
+#department {
+    /* background-color: #f8971f; */
+    border-radius: 8px;
+    color: black;
+    padding: 8px;
+    font-family: 'Georgia';
+    font-size: 16px;
+    border: 2px outset #f8971f;
+    cursor:pointer;
+  }
+
+#comment {
+    width:600px; 
+    height:200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    border: 2px outset #f8971f;
+}
+
+.reset, .submit {
+    padding: 8px;
+    font-size: 16px;
+    font-family: "Georgia";
+    border: 2px outset #f8971f;
+}
+
+.reset:hover, .submit:hover {
+    background-color: #f8971f;
+}

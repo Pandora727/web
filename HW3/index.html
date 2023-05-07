@@ -1,0 +1,119 @@
+<!--    Homework 3:  Campus Visit Feedback Form
+        Student's Name: Ziyue Fan
+        UT EID: zf2638
+        
+        Course Name: CS 329E
+        Unique Number: 52180
+        Instructor: Bulko
+        
+        Date: 02/08/2023-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>Gabby HW3</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="HW3">
+   <meta name="author" content="Gabby Fan, Ziyue Fan">
+</head>
+
+<body>
+    <section id="feedbackform">
+        <h2 style="text-align: center;">Campus Visit Feedback Form</h2>
+        <form action="echo.cgi" method="get">
+            <table style="margin-left:auto; margin-right:auto;">
+                <tr>
+                    <th style="text-align: right;">
+                        <label for="name">Student's Name: </label><br><br>
+                        <label for="address">Address: </label><br><br>
+                        <label for="email">Email: </label>
+                    </th>
+
+                    <td>
+                        <input type="text" id="name" name="name"><br><br>
+                        <input type="text" id="address" name="address"><br><br>
+                        <input type="email" id="email" name="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">Choose what you like most about the campus:</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        
+                        <input type="checkbox" id="students" name="students">
+                        <label for="students">Students</label>
+
+                        <input type="checkbox" id="location" name="location">
+                        <label for="location">Location</label>
+
+                        <input type="checkbox" id="campus" name="campus">
+                        <label for="campus">Campus</label>
+                        
+                        <input type="checkbox" id="courses" name="courses">
+                        <label for="courses">Courses Offered</label>
+                        
+                        <input type="checkbox" id="housing" name="housing">
+                        <label for="housing">Housing</label>
+                        
+                        <input type="checkbox" id="sports" name="sports">                       
+                        <label for="sports">Sports</label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">How did you become interested in the university? </th>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="radio" id="family" name="interest">
+                        <label for="family">Family</label>
+                        <input type="radio" id="friends" name="interest">
+                        <label for="friends">Friends</label>
+                        <input type="radio" id="television" name="interest">
+                        <label for="television">Television</label>
+                        <input type="radio" id="internet" name="interest">
+                        <label for="internet">Internet</label>
+                        <input type="radio" id="other" name="interest">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2"><label for="department">Select the department you visited: </label></th>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <select name="department" id="department">
+                            <option selected="selected" value="cs">Computer Science</option>
+                            <option value="business">Business Administration</option>
+                            <option value="engineer">Electrical Engineering</option>
+                            <option value="edu">Education</option>
+                            <option value="econ">Economics</option>
+                            <option value="adv">Advertising</option>
+                        </select> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">Leave us your comment: </th>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <textarea id="comment" name="comment" style = "width:600px; height:200px;"></textarea>
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td><input type="reset" value="Clear the form"></td>
+                    <td><input type="submit" value="Submit the form"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+</body>
+</html>

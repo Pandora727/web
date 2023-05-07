@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>ASCII Characters</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Find ASCII characters from their index">
+   <meta name="author" content="Bill Bulko">
+   <!-- jquery -->
+   <!-- Add jquery before other javascript -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+   <!-- viewport -->
+   <meta name="viewport" content="width=device-width,
+   initial-scale=1">
+</head>
+
+<body>
+
+   <h1> ASCII Character Printer </h1>
+
+   <script type="text/javascript"> 
+
+      inputValue = prompt("Enter an index into the ASCII table: ")
+      document.writeln('<p style="color:red">The ASCII character with index ' + inputValue + " is '" + String.fromCharCode(inputValue) + "'</p>")
+
+   </script>
+
+
+
+   <h2> Open a new window of specified size </h2>
+
+   <script type="text/javascript">
+
+      var okPressed = window.confirm("Would you like to open a new window?")
+      if (okPressed) {
+         userWidth = prompt("Enter the width in pixels:")
+         userHeight = prompt("Enter the height in pixels:")
+         myWindow = window.open("", "", "width=" + userWidth + ", height=" + userHeight)
+         myWindow.document.writeln("<h1>Bazinga!</h1>")
+      }
+
+   </script>
+
+   <h1>Input and output a string</h1>
+
+   <form>
+
+      <p>
+         Enter something here: <br>
+         <input id="inThing" type="text" size="20">
+      </p>
+
+      <input type="button" value="Copy it" onclick="copyIt()">
+
+      <p id="outThing">Output goes here</p> <br>
+
+   </form>
+   <script type="text/javascript">
+      function copyIt() {
+         enteredString = document.getElementById("inThing").value
+         document.getElementById("outThing").innerHTML = "You typed '" + enteredString + "'"
+      }
+   </script>
+
+
+
+   <h2>This is a heading. It should not toggle because it's not a paragraph.</h2>
+
+   <p>This paragraph should toggle on and off when the button is clicked.</p>
+   <p>This is another paragraph that should toggle.</p>
+
+   <button>Click me to toggle paragraphs</button>
+
+   <script>
+
+      $(document).ready(function () {
+
+         $("button").click(function () {
+            $("h2").toggle()
+         })
+
+      })
+
+   </script>
+   <!-- jquery-3 -->
+
+   <h2>Jquery Fadein Fadeout</h2>
+   <p id="click1"> Click here to fade out</p>
+   <p id="click2"> Click here to fade in</p>
+   <p id="click3"> Toggle size</p> <br>
+   <img id="whale" src="whiteWhale.jpg" style="position: relative; left: 10px;">
+   <script>
+
+      // Example of fadeOut and fadeIn
+      // Clicking on one div causes the image to fade out;  the other makes it fade back in.
+      $(document).ready(function () {
+
+         $("#click1").click(function () {
+            $("#whale").fadeOut("slow", function () {
+               console.log("fading out")
+            });
+         });
+
+         $("#click2").click(function () {
+            $("#whale").fadeIn("slow", function () {
+               console.log("fading in")
+            });
+         });
+
+         $("#click3").click(function () {
+            $("#whale").animate({
+               height: "toggle"
+            }, 5000, function () {
+               console.log("animating")
+            }
+            );
+         });
+
+
+      })
+   </script>
+
+
+   <h2>Updated Sample Form</h2>
+   <form method="POST" action="SampleForm.php">
+
+      <p>
+         <label> userID: <input name="name" type="text" size="30" required> </label>
+      </p>
+
+      <p>
+         <label> email Address: <input name="email" type="password" size="30" required> </label>
+      </p>
+
+      <p>
+         <b>Things you liked:</b><br>
+         <label> Location <input name="attraction[]" type="checkbox" value="location"> </label>
+         <label> Price <input name="attraction[]" type="checkbox" value="price"> </label>
+         <label> Service <input name="attraction[]" type="checkbox" value="service"> </label>
+      </p>
+
+      <p>
+         <b>How did you find us?</b><br>
+         <label> Search Engine <input name="connection" type="radio" value="search"> </label>
+         <label> Link from another site <input name="connection" type="radio" value="link"> </label>
+         <label> Recommendation from friend <input name="connection" type="radio" value="rec"> </label>
+         <label> Other <input name="connection" type="radio" value="other"> </label>
+      </p>
+
+      <p>
+         <label> Additional Comments: <br>
+            <textarea name="comments" rows="4" cols="36"> Enter your comments here: </textarea>
+         </label>
+      </p>
+
+      <p>
+         <label> Rate us:
+            <select name="rating">
+               <option selected="selected"> Excellent </option>
+               <option> Very Good </option>
+               <option> Good </option>
+               <option> Fair </option>
+               <option> Poor </option>
+            </select>
+         </label>
+      </p>
+
+      <p>
+         <input type="submit" value="Enter">
+         <input type="reset" value="Clear">
+      </p>
+
+   </form>
+
+   <h2>Email Validation via Regex</h2>
+   <h2> Login </h2>
+
+   <table width="50%">
+
+      <form method="post" action="email.php">
+         <tr>
+            <td> Enter e-mail address </td>
+            <td> <input type="text" name="email" size="30" /> </td>
+         </tr>
+         <tr>
+            <td> Enter password </td>
+            <td> <input type="text" name="password" size="30" /> </td>
+         </tr>
+         <tr>
+            <td> &nbsp; </td>
+            <td> &nbsp; </td>
+         </tr>
+         <tr>
+            <td> <input type="submit" value="Submit" /> </td>
+            <td> <input type="reset" value="Reset" /> </td>
+         </tr>
+      </form>
+
+   </table>
+
+
+   <h2>
+      slide Tab hidden
+   </h2>
+   <div id="TabLayer" style="position:absolute; left: -75px; top: 50px;
+          width: 115px; height: 200px; z-index: 1;
+          background-color: #CCCCCC;">
+
+      <p align="right" class="hideshow">
+         <a href="javascript:hideLayer();" class="hideshow">&lt;&lt;hide</a>
+         <a href="javascript:showLayer();" class="hideshow">show&gt;&gt;</a>
+      </p>
+
+      <p align="left" style="margin-left: 5px;">
+         <a href="#"> Scripts </a><br>
+         <a href="#"> Weblog </a><br>
+         <a href="#"> Projects </a><br>
+         <a href="#"> Contact </a><br>
+      </p>
+
+   </div>
+
+   <script language="JavaScript">
+
+      function showLayer() {
+         hiddenLayer = document.getElementById("TabLayer");
+         layerPosition = parseInt(hiddenLayer.style.left);
+         if (layerPosition < 0) {
+            hiddenLayer.style.left = (layerPosition + 5) + "px";
+            setTimeout("showLayer()", 20);
+         }
+      }
+
+      function hideLayer() {
+         hiddenLayer = document.getElementById("TabLayer");
+         hiddenLayer.style.left = "-75" + "px";
+      }
+
+   </script>
+
+</body>
+
+</html>

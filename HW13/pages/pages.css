@@ -1,0 +1,127 @@
+#container
+{
+    width: 90%;
+    margin: 10px auto;
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid gray;
+    line-height: 120%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 150%;
+}
+
+p {font-size:20px;}
+
+#nav {
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #fff;
+    margin: 0;
+    text-align: center;
+    border-bottom: 4px double #333;
+}
+
+#nav a {
+    padding-bottom: 4px;
+    color:#333;
+    text-decoration: none;
+    display:inline;
+    align-content: space-between;
+}
+
+#nav a:hover {
+    border-bottom: 4px solid gray;
+}    
+
+#header {
+    padding: .5em;
+    background-color: #ddd;
+    border-bottom: 1px solid gray;
+    align-content: space-between;
+}
+
+#header h1
+{
+padding: 0;
+margin: 0;
+height:max-content;
+}
+
+#header #date{
+    padding-top: 24px;
+    padding-left:12px;
+    float:left;
+    width:max-content;
+}
+
+#header #location {
+    padding-top: 28px;
+    padding-right: 24px;
+    float:right;
+    width: max-content;
+}
+#header #title {
+    padding-top: 48px;
+    padding-bottom: 36px;
+    text-align: center;
+    width:auto;
+}
+h1 {
+    font-size: 54px;
+    font-family: 'Brush Script MT', cursive;
+    text-shadow: 1px 2px 2px #908f8f;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#908f8f;
+}
+
+
+#central{
+    margin-left: 50px;
+    border-left: 1px solid gray;
+    margin-right: 50px;
+    border-right: 1px solid gray;
+    padding: 1em;
+}
+
+
+#upper{
+    line-height: 250%;
+    margin:24px;
+}
+
+#upper div{
+    height: 150px;
+}
+
+#central img{
+    float:right;
+    width: 150px;
+    height:120px;
+    padding-left: 50px;
+    margin: 12px;
+    padding-top:0px;
+    padding-bottom:4px;
+
+}
+
+#footer{
+    clear: both;
+    margin: 0;
+    padding: .5em;
+    color: #333;
+    background-color: #ddd;
+    border-top: 1px solid gray;
+    text-align: center;
+}
+
+/* #right p { margin: 0 0 1em 0; } */
+/* #central h2 { margin: 0 0 .5em 0; } */

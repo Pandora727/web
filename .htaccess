@@ -1,0 +1,8 @@
+AuthType Basic
+AuthName "Restricted Site"
+AuthBasicProvider ldap
+AuthLDAPURL "ldap://ldap-rr.cs.utexas.edu/dc=cs,dc=utexas,dc=edu?uid" TLS
+AuthLDAPGroupAttributeIsDN off
+AuthLDAPGroupAttribute memberUid
+Require ldap-user zf2638
+Require ldap-group cn=cs329e-bulko,ou=Groups,dc=cs,dc=utexas,dc=edu

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+        
+<head>
+    <title>Gabby HW6</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mortagage Calculator">
+    <meta name="author" content="Gabby Fan, Ziyue Fan">
+    <link rel="stylesheet" href="/cs329e-bulko/zf2638/HW6/calculator.css">
+    <script src="/cs329e-bulko/zf2638/HW6/calculator.js" defer></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head> 
+        
+<body>
+    <div id="form">
+        <h2>Mortgage Calculator</h2>
+        <form>
+            <table>
+                <tr>
+                    <th>
+                        <label for="principal"> Principal Amount: </label>
+                    </th>
+                    <td>
+                        <input type="text" id="principal" name="principal" placeholder="100.00">
+    
+                    </td>
+                </tr>
+           
+                <tr>
+                    <th> <label for="rate"> Yearly Interest Rate: </label>
+                    </th>
+                    <td><input type="text" id="rate" name="rate" placeholder="0.08">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="term"> Loan Term in Months: </label> 
+            
+                    </th>
+                    <td>
+                        <input type="text" id="term" name="term" placeholder="6">
+                    </td>
+                </tr>
+                <tr style="height:70px;">
+                    <th style="text-align:center;">
+                        <input type="button" class = "button" value="CALCULATE" onclick="calculate()">
+            
+                    </th>
+                    <td style="text-align:center;">
+                        <input type="reset" class = "button" value="CLEAR">
+                    </td>
+                </tr>
+            
+        </table>
+
+        </form> 
+    </div>
+
+
+
+    
+    <div>
+        <hr>
+        <h2>Calculation Result</h2>
+        <table id="result">
+            <tr>
+                <th>Monthly Payment: </th>
+                <td id="pmt">  </td>
+            </tr>
+            <tr>
+                <th>Sum of All Payments: </th>
+                <td id="sum">  </td>
+            </tr>
+            <tr>
+                <th>Total Interest Paid: </th>
+                <td id="total">  </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

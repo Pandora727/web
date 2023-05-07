@@ -1,0 +1,41 @@
+body{
+    width:50%;
+    margin:auto;
+    text-align: center;
+    align-content: center;
+    background-color: aliceblue;
+
+}
+
+th, td {
+    text-align: left;
+}
+h2 {
+    font-size: 24px;
+    color: black;
+    text-shadow: 2px 1px 2px grey;
+}
+
+input[type="submit"], input[type="reset"] {
+    /* background-color: aliceblue; */
+    width:160px;
+    height:40px;
+    margin:16px;
+    border: 2px ridge gray;
+    border-radius: 4px;
+    background-color: aliceblue;
+    align-self: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    scale:110%;
+    background-color:rgb(135, 194, 245);
+}
+
+input[type="submit"]:active, input[type="reset"]:active {
+    scale: 90%;
+}

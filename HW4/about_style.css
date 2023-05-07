@@ -1,0 +1,93 @@
+:root {
+    --main-color:rgb(202, 162, 240);
+    text-align: center;
+
+    text-transform: capitalize;
+    font-family: Georgia;
+    font-size: 16px;
+    color:#401d3e;
+    
+
+}
+
+body {
+    background-color: #fbeee8;
+    margin:0;
+}
+
+h1 {
+    font-size:64px;
+}
+
+h2{
+    font-style: italic;
+    text-decoration: underline;
+    color:var(--main-color);
+}
+
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:16px;
+    font-variant: small-caps;
+    color: #cbaabb;
+}
+
+
+.nav{
+    margin:0;
+    padding:0;
+    width: 1920px;
+    display: block;
+    overflow:hidden;
+    position:fixed;
+    font-family: Georgia;
+    background-color:#fbeee8;
+
+}
+
+.nav a {
+    float:left;
+    color:black;
+    text-align: left;
+    padding: 8px 16px; 
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    background-color: #b193b7;
+    color:#fbeee8;
+}
+
+#photo {
+
+    width:45%;
+    height:auto;
+    display:inline-block;
+    padding:12px;
+    text-align: left;
+    padding-top:56px;
+    margin:8px;
+}
+#photo img {    
+    border-radius: 24px;
+    width:100%;
+    height:100%;
+}
+
+#address {
+    top:50%;
+    width:45%;
+    display:inline-block;
+    padding:12px;
+    padding-left: 20px;
+    text-align: left;
+    padding-top:28px;
+    margin:8px;
+}
+
+.instagram-media {
+    align-content: center;
+}

@@ -1,0 +1,38 @@
+body {
+    background-image: url('https://wallpaperaccess.com/full/622847.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 20px;
+}
+
+td, tr, th {
+    border: 2px ridge gold; 
+    border-radius: 8px;
+    background-color: rgb(248, 236, 245);
+    padding: 12px;
+    width:200px;
+}
+
+table {
+    color:rgb(55, 37, 68);
+    text-align:center;
+    margin:auto;
+    padding: 10px;
+}
+
+table a {
+    text-decoration: none;
+}
+table a:hover{
+    text-decoration: underline;
+}
+
+caption {
+    color: rgb(202, 136, 249);
+    text-shadow: 2px 2px 1px black;
+    margin:12px;
+    padding:12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-style: italic;
+}

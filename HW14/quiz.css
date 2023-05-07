@@ -1,0 +1,98 @@
+body {
+    background-color: aliceblue;
+}
+
+
+a{
+
+    text-decoration: none;
+    color:#333;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#908f8f;
+}
+
+
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+form {
+    align-content: center;
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+
+}
+#quiz {
+    width: 600px;
+
+
+}
+#quiz input {
+    width:auto;
+}
+#quiz input[type="submit"]{
+    width:30%;
+    margin:auto;
+
+}
+
+#submit{
+    background-color:#4CAF50;
+}
+#submit:hover{
+    background-color:#4caf4f72;
+}
+
+
+input[type="text"], input[type="password"] {
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+input[type="submit"], input[type="button"]{
+    
+    width:100%;
+    height:40px;
+    border: 2px ridge gray;
+    border-radius: 4px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #0077cc;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    
+
+}
+
+input[type="submit"]:hover, input[type="button"]:hover{
+    scale:105%;
+    background-color:rgb(135, 194, 245);
+}
+
+input[type="submit"]:active, input[type="button"]:active {
+    scale: 95%;
+}
+
+th, td {
+    text-align:left;
+}
